@@ -9,6 +9,7 @@
     <meta name="author" content="">
 
     <title> Nina's Portfolio </title>
+	
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -16,14 +17,21 @@
     <!-- Custom styles for this template -->
     <link href="css/3-col-portfolio.css" rel="stylesheet">
 
+<!-- Make links in the nav spots turn red when hovered -->
+<style>
+  .nav-link:hover,
+  .page-link:hover {
+    color: red !important;
+  }
+  </style>
   </head>
 
   <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #e3f5c6;">
       <div class="container">
-        <a class="navbar-brand" href="index.html"> Nina Osborne's Geovisualization Portfolio </a>
+        <a class="navbar-brand" href="shortbio.html.html" title="Who is that?"> Nina Osborne's Geovisualization Portfolio </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -55,6 +63,18 @@
       <h1 class="my-4">Geovisualization Portfolio
         <small>GEOG:3540</small>
       </h1>
+	  
+	  <!-- Adding a welcome message -->
+<<div style="background-color: #c3d6a5; padding: 20px; border-radius: 10px; margin-bottom: 30px; text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;">
+  <div style="font-size: 1.8em; font-weight: bold; margin-bottom: 10px;">
+    Hello!
+  </div>
+  <p style="margin: 0;">
+    Below, you will find what I worked on during the Spring of 2025 in my Geographic Visualization class. 
+    I used HTML, CSS, JavaScript, and mapping libraries and tools such as CartoDB, Leaflet, and D3.
+  </p>
+  
+</div>
 
       <div class="row">
         <div class="col-lg-4 col-sm-6 portfolio-item">
@@ -62,7 +82,7 @@
             <a href="images/lab2choropleth.png"><img class="card-img-top" src="images/lab2choropleth.png" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="https://observablehq.com/d/51264d267325ee45">Disability Rate by U.S. County</a>
+               <a href="https://observablehq.com/d/51264d267325ee45" title="Click to go to Observable!">Disability Rate by U.S. County</a>
               </h4>
               <p class="card-text"> This is a choropleth map of disability rate respective to every U.S. county, according to the census in 2000. </p>
             </div>
@@ -73,7 +93,7 @@
             <a href="images/lab3Prop.png"><img class="card-img-top" src="images/lab3Prop.png" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="https://observablehq.com/d/35bc23cee174e617">Amtrak Stations by Ridership</a>
+                <a href="https://observablehq.com/d/35bc23cee174e617" title="Click to go to Observable!">Amtrak Stations by Ridership</a>
               </h4>
               <p class="card-text">This is a proportional symbol map of U.S. Amtrak Stations by Ridership in 2022. </p>
             </div>
@@ -84,7 +104,7 @@
             <a href="images/lab4bivariate.png"><img class="card-img-top" src="images/lab4bivariate.png" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="https://observablehq.com/d/aed61a211b6c679f">Disability Rate and High School Graduation Rate, West Virginia </a>
+                <a href="https://observablehq.com/d/aed61a211b6c679f" title="Click to go to Observable!">Disability Rate and High School Graduation Rate, West Virginia </a>
               </h4>
               <p class="card-text">This map depicts the disability rate and high school graduation rate respective to each West Virginian county, in 2000. </p>
             </div>
@@ -95,7 +115,7 @@
             <a href="images/precipitation.png"><img class="card-img-top" src="images/precipitation.png" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="https://observablehq.com/@caglarkoylu/isarithmic-mapping-geog-3540">Isarithmic Mapping of Yearly Total Precipitation</a>
+                <a href="https://observablehq.com/@caglarkoylu/isarithmic-mapping-geog-3540" title="Click to go to Observable!">Isarithmic Mapping of Yearly Total Precipitation</a>
               </h4>
               <p class="card-text">Isarithmic Mapping of Yearly Total Precipitation by Caglar Koylu.</p>
             </div>
@@ -106,7 +126,7 @@
             <a href="images/map.png"><img class="card-img-top" src="images/map.png" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="flowmap.html">Flowmap</a>
+                <a href="flowmap.html" title="Click to learn more!">Flowmap</a>
               </h4>
               <p class="card-text">This is a flowmap depicting changes in family migration between 1887 - 1924.</p>
             </div>
@@ -117,7 +137,7 @@
             <a href="images/launchsites.png"><img class="card-img-top" src="images/launchsites.png" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="https://observablehq.com/d/ae40892b6bd801a1">Final Project: Cape Canaveral Launches, 1954 - 2011</a>
+                <a href="https://observablehq.com/d/ae40892b6bd801a1" title="Click to go to Observable!">Final Project: Cape Canaveral Launches, 1954 - 2011</a>
               </h4>
               <p class="card-text">For my final project, I plan to explore the landscape of the most active space port in the country: Cape Canaveral, FL. This is a proportional symbol map of launches from deactivated ports.</p>
             </div>
@@ -155,9 +175,9 @@
     <!-- /.container -->
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
+    <footer class="py-5" style="background-color: #e3f5c6;">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Nina Osborne 2025</p>
+        <p class="m-0 text-center text-black"> Created by Nina Osborne, 2025</p>
       </div>
       <!-- /.container -->
     </footer>
